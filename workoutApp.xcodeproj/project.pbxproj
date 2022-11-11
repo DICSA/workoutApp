@@ -10,9 +10,11 @@
 		444D2107290C05A80061B257 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D2106290C05A80061B257 /* AppDelegate.swift */; };
 		444D2109290C05A80061B257 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D2108290C05A80061B257 /* SceneDelegate.swift */; };
 		444D210B290C05A80061B257 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D210A290C05A80061B257 /* ViewController.swift */; };
-		444D210E290C05A80061B257 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 444D210C290C05A80061B257 /* Main.storyboard */; };
 		444D2110290C05A90061B257 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 444D210F290C05A90061B257 /* Assets.xcassets */; };
 		444D2113290C05A90061B257 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 444D2111290C05A90061B257 /* LaunchScreen.storyboard */; };
+		44E60748290D3B0B00B27A1E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E60747290D3B0B00B27A1E /* TabBarController.swift */; };
+		44E6074B290D3E1D00B27A1E /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E6074A290D3E1C00B27A1E /* UIColor+.swift */; };
+		44E6074E290D41D000B27A1E /* ResoucesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E6074D290D41D000B27A1E /* ResoucesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +22,12 @@
 		444D2106290C05A80061B257 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		444D2108290C05A80061B257 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		444D210A290C05A80061B257 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		444D210D290C05A80061B257 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		444D210F290C05A90061B257 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		444D2112290C05A90061B257 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		444D2114290C05A90061B257 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44E60747290D3B0B00B27A1E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		44E6074A290D3E1C00B27A1E /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		44E6074D290D41D000B27A1E /* ResoucesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResoucesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		444D2105290C05A80061B257 /* workoutApp */ = {
 			isa = PBXGroup;
 			children = (
+				44E60749290D3E0000B27A1E /* Helpers */,
+				444D211B290C175F0061B257 /* Application */,
+				444D210A290C05A80061B257 /* ViewController.swift */,
+				44E60747290D3B0B00B27A1E /* TabBarController.swift */,
+				444D211C290C1A060061B257 /* SupportingFile */,
+			);
+			path = workoutApp;
+			sourceTree = "<group>";
+		};
+		444D211B290C175F0061B257 /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				444D2106290C05A80061B257 /* AppDelegate.swift */,
 				444D2108290C05A80061B257 /* SceneDelegate.swift */,
-				444D210A290C05A80061B257 /* ViewController.swift */,
-				444D210C290C05A80061B257 /* Main.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		444D211C290C1A060061B257 /* SupportingFile */ = {
+			isa = PBXGroup;
+			children = (
 				444D210F290C05A90061B257 /* Assets.xcassets */,
 				444D2111290C05A90061B257 /* LaunchScreen.storyboard */,
 				444D2114290C05A90061B257 /* Info.plist */,
 			);
-			path = workoutApp;
+			path = SupportingFile;
+			sourceTree = "<group>";
+		};
+		44E60749290D3E0000B27A1E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				44E6074C290D3E2E00B27A1E /* +Ext */,
+				44E6074D290D41D000B27A1E /* ResoucesModel.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		44E6074C290D3E2E00B27A1E /* +Ext */ = {
+			isa = PBXGroup;
+			children = (
+				44E6074A290D3E1C00B27A1E /* UIColor+.swift */,
+			);
+			path = "+Ext";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +165,6 @@
 			files = (
 				444D2113290C05A90061B257 /* LaunchScreen.storyboard in Resources */,
 				444D2110290C05A90061B257 /* Assets.xcassets in Resources */,
-				444D210E290C05A80061B257 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,22 +176,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				444D210B290C05A80061B257 /* ViewController.swift in Sources */,
+				44E60748290D3B0B00B27A1E /* TabBarController.swift in Sources */,
 				444D2107290C05A80061B257 /* AppDelegate.swift in Sources */,
 				444D2109290C05A80061B257 /* SceneDelegate.swift in Sources */,
+				44E6074E290D41D000B27A1E /* ResoucesModel.swift in Sources */,
+				44E6074B290D3E1D00B27A1E /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		444D210C290C05A80061B257 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				444D210D290C05A80061B257 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		444D2111290C05A90061B257 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,12 +321,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QY8YQ47QZU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = workoutApp/Info.plist;
+				INFOPLIST_FILE = workoutApp/SupportingFile/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +334,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = RuslanBelov.workoutApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +352,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QY8YQ47QZU;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = workoutApp/Info.plist;
+				INFOPLIST_FILE = workoutApp/SupportingFile/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +365,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = RuslanBelov.workoutApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
