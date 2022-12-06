@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		441C9335293F4CCB00FB65E9 /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441C9334293F4CCB00FB65E9 /* WeekView.swift */; };
 		444D2107290C05A80061B257 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D2106290C05A80061B257 /* AppDelegate.swift */; };
 		444D2109290C05A80061B257 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D2108290C05A80061B257 /* SceneDelegate.swift */; };
 		444D210B290C05A80061B257 /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D210A290C05A80061B257 /* OverviewController.swift */; };
@@ -17,6 +18,9 @@
 		449A330A2923907400103819 /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449A33092923907400103819 /* SessionController.swift */; };
 		449A330C2923909F00103819 /* ProgressController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449A330B2923909F00103819 /* ProgressController.swift */; };
 		449A330E292390ED00103819 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449A330D292390ED00103819 /* SettingsController.swift */; };
+		449A33122923D0DA00103819 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449A33112923D0DA00103819 /* SecondaryButton.swift */; };
+		44AA7F58293A7D8B00BFB3CF /* OverviewNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AA7F57293A7D8B00BFB3CF /* OverviewNavBar.swift */; };
+		44AA7F5A293A889800BFB3CF /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AA7F59293A889800BFB3CF /* BaseView.swift */; };
 		44E60748290D3B0B00B27A1E /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E60747290D3B0B00B27A1E /* TabBarController.swift */; };
 		44E6074B290D3E1D00B27A1E /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E6074A290D3E1C00B27A1E /* UIColor+.swift */; };
 		44E6074E290D41D000B27A1E /* ResoucesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E6074D290D41D000B27A1E /* ResoucesModel.swift */; };
@@ -24,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		441C9334293F4CCB00FB65E9 /* WeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
 		444D2103290C05A80061B257 /* workoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = workoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		444D2106290C05A80061B257 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		444D2108290C05A80061B257 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +41,9 @@
 		449A33092923907400103819 /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
 		449A330B2923909F00103819 /* ProgressController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressController.swift; sourceTree = "<group>"; };
 		449A330D292390ED00103819 /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		449A33112923D0DA00103819 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		44AA7F57293A7D8B00BFB3CF /* OverviewNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewNavBar.swift; sourceTree = "<group>"; };
+		44AA7F59293A889800BFB3CF /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		44E60747290D3B0B00B27A1E /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		44E6074A290D3E1C00B27A1E /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		44E6074D290D41D000B27A1E /* ResoucesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResoucesModel.swift; sourceTree = "<group>"; };
@@ -53,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		441C9333293F4CA000FB65E9 /* WeekView */ = {
+			isa = PBXGroup;
+			children = (
+				441C9334293F4CCB00FB65E9 /* WeekView.swift */,
+			);
+			path = WeekView;
+			sourceTree = "<group>";
+		};
 		444D20FA290C05A80061B257 = {
 			isa = PBXGroup;
 			children = (
@@ -115,8 +131,9 @@
 			isa = PBXGroup;
 			children = (
 				44E60747290D3B0B00B27A1E /* TabBarController.swift */,
-				449A32FF291FB2DE00103819 /* BaseController.swift */,
 				44F7C286291EC25F0096C1BA /* NavBarController.swift */,
+				449A32FF291FB2DE00103819 /* BaseController.swift */,
+				44AA7F59293A889800BFB3CF /* BaseView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -124,6 +141,7 @@
 		449A330529238DF800103819 /* Overview */ = {
 			isa = PBXGroup;
 			children = (
+				449A33102923D05F00103819 /* Views */,
 				444D210A290C05A80061B257 /* OverviewController.swift */,
 			);
 			name = Overview;
@@ -151,6 +169,16 @@
 				449A330D292390ED00103819 /* SettingsController.swift */,
 			);
 			name = Settings;
+			sourceTree = "<group>";
+		};
+		449A33102923D05F00103819 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				441C9333293F4CA000FB65E9 /* WeekView */,
+				449A33112923D0DA00103819 /* SecondaryButton.swift */,
+				44AA7F57293A7D8B00BFB3CF /* OverviewNavBar.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		44E60749290D3E0000B27A1E /* Helpers */ = {
@@ -241,16 +269,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441C9335293F4CCB00FB65E9 /* WeekView.swift in Sources */,
 				449A330E292390ED00103819 /* SettingsController.swift in Sources */,
 				444D210B290C05A80061B257 /* OverviewController.swift in Sources */,
+				44AA7F58293A7D8B00BFB3CF /* OverviewNavBar.swift in Sources */,
 				44E60748290D3B0B00B27A1E /* TabBarController.swift in Sources */,
 				444D2107290C05A80061B257 /* AppDelegate.swift in Sources */,
 				44F7C287291EC25F0096C1BA /* NavBarController.swift in Sources */,
 				449A330A2923907400103819 /* SessionController.swift in Sources */,
+				449A33122923D0DA00103819 /* SecondaryButton.swift in Sources */,
 				449A330C2923909F00103819 /* ProgressController.swift in Sources */,
 				444D2109290C05A80061B257 /* SceneDelegate.swift in Sources */,
 				44E6074E290D41D000B27A1E /* ResoucesModel.swift in Sources */,
 				449A33022922990000103819 /* UIView+.swift in Sources */,
+				44AA7F5A293A889800BFB3CF /* BaseView.swift in Sources */,
 				449A3300291FB2DE00103819 /* BaseController.swift in Sources */,
 				44E6074B290D3E1D00B27A1E /* UIColor+.swift in Sources */,
 			);

@@ -7,6 +7,8 @@
 
 import UIKit
 
+//MARK: - в данном base мы реализуем базовые функции 
+
 enum NavBarPosition {
     case left
     case right
@@ -15,7 +17,9 @@ enum NavBarPosition {
 class BaseController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        addViews()
+        layoutViews()
         configure()
     }
 }
@@ -27,7 +31,7 @@ class BaseController: UIViewController {
 
     func addViews() {}
 
-    func layoutView() {}
+    func layoutViews() {}
     
     func configure() {
         view.backgroundColor = Resouces.Colors.background
